@@ -1,0 +1,8 @@
+git init
+git remote add origin https://github.com/seu-usuario/app-rifa.git
+npm run build
+cd dist
+git checkout -b gh-pages
+git add .
+git commit -m "deploy"
+git push origin gh-pages --force
